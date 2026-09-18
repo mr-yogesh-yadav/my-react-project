@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title-box{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+  width: 100%;
+  background: #0d1b2e;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 120px;
+
+  color: white;
+}
+
+/* LEFT SIDE */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  min-width: 0;
+}
+
+.logo-icon {
+  font-size: 100px;
+  color: #6847ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-box {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.title-box h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.title-box h1 span {
+  color: #6847ff;
+}
+
+.title-box p {
+  margin-top: 5px;
+  font-size: 17px;
+  color: #9da8ba;
+  text-align: start;
+}
+
+
+/* RIGHT SIDE */
+
+.date-box {
+  /* min-width: 330px; */
+  /* height: 105px; */
+
+  background: #091525;
+  border: 1px solid #26364b;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: start;
+
+  padding: 18px 23px;
+  gap: 20px;
+}
+
+.calendar-icon {
+  font-size: 22px;
+  color: #d7dce5;
+}
+/* Calendar picker icon */
+.date-content input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.date-content p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #9da8ba;
+}
+.date-content p {
+  font-size: 18px;
+  color: #9da8ba;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+}
+
+@media (max-width: 1086px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width:992px){
+    .navbar{
+        padding: 20px 50px;
+    }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .logo-icon {
+    font-size: 70px;
+  }
+
+  .title-box h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar-left {
+    align-items: flex-start;
+  }
+
+  .logo-icon {
+    font-size: 55px;
+  }
+
+  .title-box h1 {
+    font-size: 24px;
+  }
+
+  .title-box p {
+    font-size: 14px;
+  }
+
+  /* .date-box {
+    align-self: stretch;
+  } */
+}

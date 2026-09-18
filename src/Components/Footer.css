@@ -1,0 +1,102 @@
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px 120px;
+  box-sizing: border-box;
+  background: #081525;
+  border-top: 1px solid #1c3048;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+/* =========================
+   LEFT
+========================= */
+.footer-left h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e9eef5;
+}
+.footer-left p {
+  margin: 0;
+  font-size: 16px;
+  color: #a8b5c5;
+}
+/* =========================
+   RIGHT
+========================= */
+.footer-right {
+  text-align: right;
+}
+.footer-right h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #e9eef5;
+}
+.footer-right p {
+  margin: 0;
+  font-size: 16px;
+  color: #a8b5c5;
+}
+/* =========================
+   1200px
+========================= */
+@media (max-width: 1200px) {
+  .footer {
+    padding: 20px 80px;
+  }
+}
+/* =========================
+   992px
+======================== */
+@media (max-width: 992px) {
+  .footer {
+    padding: 20px 50px;
+  }
+  .footer-left h3 {
+    font-size: 17px;
+  }
+  .footer-left p,
+  .footer-right p {
+    font-size: 15px;
+  }
+  .footer-right h3 {
+    font-size: 16px;
+  }
+}
+/* =========================
+   768px
+========================= */
+@media (max-width:768px){
+    .footer{
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 568px) {
+  .footer {
+    min-height: auto;
+    padding: 20px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+  }
+  .footer-right {
+    text-align: center;
+  }
+  .footer-left h3,
+  .footer-right h3 {
+    font-size: 16px;
+  }
+  .footer-left p,
+  .footer-right p {
+    font-size: 14px;
+  }
+}

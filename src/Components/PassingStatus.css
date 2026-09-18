@@ -1,0 +1,188 @@
+.passing-status {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 25px 120px;
+
+  color: white;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.status-card {
+  flex: 1;
+  /* min-height: 225px; */
+  padding: 28px 32px;
+  background: #0d1b2e;
+  border: 1px solid #263b54;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 0.3s;
+}
+/* Hover */
+.status-card:hover {
+  transform: translateY(-3px);
+  border-color: #385675;
+}
+/* =========================
+   ICON
+========================= */
+.status-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.status-card h2 {
+  font-size: 36px;
+
+  line-height: 1;
+
+  margin: 0 0 12px;
+
+  color: white;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.status-card p {
+  margin: 0;
+  text-wrap: nowrap;
+  font-size: 20px;
+
+  color: #9da8ba;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.total-card .status-icon {
+  color: #3d8df5;
+  background: rgba(61, 141, 245, 0.18);
+}
+
+.total-card p {
+  color: #3d8df5;
+  text-wrap: nowrap;
+}
+
+
+/* =========================
+   PASSED
+========================= */
+
+.passed-card .status-icon {
+  color: #3ee879;
+  background: rgba(62, 232, 121, 0.18);
+}
+
+.passed-card p {
+  color: #3ee879;
+}
+
+
+/* =========================
+   FAILED
+========================= */
+
+.failed-card .status-icon {
+  color: #ff5363;
+  background: rgba(255, 83, 99, 0.18);
+}
+
+.failed-card h2 {
+  color: #ff5363;
+}
+
+.failed-card p {
+  color: #ff5363;
+}
+
+
+/* =========================
+   AVERAGE
+========================= */
+
+.average-card .status-icon {
+  color: #ffc33d;
+  background: rgba(255, 195, 61, 0.18);
+}
+
+
+/* =========================
+   HIGHEST
+========================= */
+
+.highest-card .status-icon {
+  color: #ffc33d;
+  background: rgba(255, 195, 61, 0.18);
+}
+
+
+/* =========================
+   LOWEST
+========================= */
+
+.lowest-card .status-icon {
+  color: #ff5363;
+  background: rgba(255, 83, 99, 0.18);
+}
+
+.lowest-card p {
+  color: #ff5363;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+  .passing-status {
+    margin: 25px 80px;
+  }
+}
+@media (max-width: 992px) {
+
+  .passing-status {
+    margin: 25px 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .passing-status {
+    margin: 20px 30px;
+
+    flex-direction: column;
+  }
+
+  .status-card {
+    width: 100%;
+    min-height: auto;
+  }
+}

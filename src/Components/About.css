@@ -1,0 +1,291 @@
+/* =========================
+   MAIN SECTION
+========================= */
+.about-section {
+  width: 100%;
+  padding: 20px 120px;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.about-card {
+    background: #0d1b2e;
+    border: 1px solid #263b54;
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.about-card:hover {
+  border-color: #315477;
+}
+/* =========================
+   CARD HEADING
+========================= */
+.about-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 25px;
+  text-align: start;
+}
+.heading-icon {
+  font-size: 30px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.quick-icon {
+  color: #ffc107;
+}
+.grade-icon {
+  color: #00d084;
+}
+.info-icon {
+  color: #1597ff;
+}
+.about-card-heading h2 {
+  margin: 0;
+  font-size: 27px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
+}
+.about-card-heading p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #9eacbd;
+  line-height: 1.4;
+}
+/* =========================
+   QUICK ACTIONS
+========================= */
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.quick-btn {
+  width: 100%;
+  /* min-height: 62px; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #315274;
+  background: #142640;
+  color: #dce5ef;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.3s;
+}
+.quick-btn svg {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.quick-btn:nth-child(1) svg {
+  color: #168cff;
+}
+.quick-btn:nth-child(2) svg {
+  color: #36e875;
+}
+.quick-btn:nth-child(3) svg {
+  color: #ff5964;
+}
+.quick-btn:nth-child(4) svg {
+  color: #ffc107;
+}
+.quick-btn:nth-child(5) svg {
+  color: #168cff;
+}
+.quick-btn:hover {
+  background: #1a3150;
+  border-color: #47739d;
+  transform: translateX(3px);
+}
+/* =========================
+   GRADE TABLE
+========================= */
+.grade-table {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #263b54;
+}
+.grade-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 54px;
+  border-bottom: 1px solid #263b54;
+  background: #0d1b2e;
+}
+.grade-row:last-child {
+  border-bottom: none;
+}
+.grade-row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e6ee;
+  font-size: 16px;
+  border-right: 1px solid #263b54;
+}
+.grade-row > div:last-child {
+  border-right: none;
+}
+.grade-header {
+  min-height: 56px;
+  background: #172a43;
+}
+.grade-header > div {
+  font-weight: 700;
+  color: #dce5ef;
+}
+/* =========================
+   GRADE BADGES
+========================= */
+.grade-badge {
+  width: 51px;
+  height: 39px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+}
+.grade-a {
+  background: #075f3a;
+  color: #3df08b;
+  border: 1px solid #16874f;
+}
+.grade-b {
+  background: #174d86;
+  color: #62b1ff;
+  border: 1px solid #286ba8;
+}
+.grade-c {
+  background: #875314;
+  color: #ffc45c;
+  border: 1px solid #a86c1d;
+}
+.grade-d {
+  background: #8a6810;
+  color: #ffe04e;
+  border: 1px solid #b68b16;
+}
+.grade-f {
+  background: #792b31;
+  color: #ff6871;
+  border: 1px solid #a83c43;
+}
+/* =========================
+   ABOUT POINTS
+========================= */
+.about-points {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 5px;
+}
+.about-point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #dbe3ec;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.about-point svg {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50%;
+  background: #19df6c;
+  color: #071b12;
+  flex-shrink: 0;
+}
+/* =========================
+   QUOTE
+========================= */
+.about-quote {
+  margin-top: 25px;
+  padding: 20px 22px;
+  border-radius: 11px;
+  background: #182e50;
+  border: 1px solid #31517a;
+}
+.about-quote strong {
+  display: block;
+  font-size: 17px;
+  color: #e6edf5;
+  font-weight: 600;
+}
+.about-quote p {
+  margin: 10px 0 0;
+  color: #d3dce8;
+  font-size: 16px;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+/* @media (max-width: 1400px) {
+  .about-container {
+    width: calc(100% - 160px);
+  }
+} */
+@media (max-width: 1200px) {
+    .about-section{
+        padding: 20px 80px;
+    }
+    .about-card {
+        width: calc(50% - 12.5px);
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:992px){
+    .about-section{
+        padding: 20px 50px;
+    }
+}
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px 30px;
+  }
+  .about-card{
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .about-container {
+    width: calc(100% - 24px);
+  }
+  .about-card {
+    padding: 17px;
+  }
+  .about-card-heading {
+    gap: 12px;
+  }
+  .quick-btn {
+    gap: 14px;
+    padding: 0 14px;
+  }
+  .grade-badge {
+    width: 43px;
+    height: 34px;
+    font-size: 14px;
+  }
+}

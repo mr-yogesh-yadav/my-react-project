@@ -7,17 +7,8 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 function App() {
   const [students, setStudents] = useState([]);
-  // =========================
-  // ADD STUDENT
-  // =========================
   const addStudent = (student) => {setStudents((prevStudents) => [...prevStudents,student]);};
-  // =========================
-  // UPDATE STUDENT
-  // =========================
   const updateStudent = (id, updatedData) => {setStudents((prevStudents) =>prevStudents.map((student) =>student.id === id? {...student,...updatedData}: student));};
-  // =========================
-  // DELETE STUDENT
-  // =========================
   const deleteStudent = (id) => {setStudents((prevStudents) =>prevStudents.filter((student) => student.id !== id));};
   return (
     <>

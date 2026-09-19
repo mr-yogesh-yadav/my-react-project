@@ -2,12 +2,10 @@ import React from "react";
 import { FaGraduationCap, FaCalendarAlt } from "react-icons/fa";
 import "./Navbar.css";
 const Navbar = () => {
-  // Actual current date
   const today = new Date();
   const date = today.toLocaleDateString("en-US", {weekday: "short",day: "2-digit",month: "short",year: "numeric",});
   return (
     <nav className="navbar">
-      {/* LEFT */}
       <div className="navbar-left">
         <div className="logo-icon">
           <FaGraduationCap />
@@ -19,7 +17,6 @@ const Navbar = () => {
           <p>Add, manage and analyze your students easily</p>
         </div>
       </div>
-      {/* RIGHT */}
       <div className="date-box">
         <div className="calendar-icon">
           <FaCalendarAlt />
